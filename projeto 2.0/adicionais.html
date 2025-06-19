@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Adicionais</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .grupo-adicionais {
+      margin-bottom: 30px;
+      padding: 15px;
+      background: #fafafa;
+      border-radius: 8px;
+      box-shadow: 0 1px 5px rgba(0,0,0,0.05);
+    }
+
+    .grupo-adicionais h2 {
+      margin-bottom: 10px;
+      font-size: 22px;
+      color: #333;
+    }
+
+    .opcoes {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .opcoes label {
+      background: #fff;
+      padding: 10px 20px;
+      border-radius: 8px;
+      box-shadow: 0 1px 5px rgba(0,0,0,0.08);
+      cursor: pointer;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .botoes {
+      margin-top: 30px;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Monte seu pedido</h1>
+    
+    <form>
+      <div class="grupo-adicionais">
+        <h2>Molhos</h2>
+        <div class="opcoes">
+          <label><input type="checkbox" name="adicional" value="ketchup"> Ketchup</label>
+          <label><input type="checkbox" name="adicional" value="maionese"> Maionese</label>
+          <label><input type="checkbox" name="adicional" value="barbecue"> Barbecue</label>
+          <label><input type="checkbox" name="adicional" value="mostarda"> Mostarda</label>
+          <label><input type="checkbox" name="adicional" value="maionese-verde"> Maionese Verde</label>
+          <label><input type="checkbox" name="adicional" value="mostarda-mel"> Mostarda e Mel</label>
+        </div>
+      </div>
+
+      <div class="grupo-adicionais">
+        <h2>Acompanhamentos</h2>
+        <div class="opcoes">
+          <label><input type="checkbox" name="adicional" value="batata frita"> Batata Frita</label>
+          <label><input type="checkbox" name="adicional" value="aneis de cebola"> Anéis de Cebola</label>
+          <label><input type="checkbox" name="adicional" value="salada"> Salada</label>
+        </div>
+      </div>
+
+      <div class="botoes">
+        <button type="submit">Confirmar Adicionais</button>
+        <button type="button" onclick="window.location.href='index.html'">Finalizar Pedido</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
